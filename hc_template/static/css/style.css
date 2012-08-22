@@ -109,6 +109,7 @@ p {
     background-color: rgb(208,203,199);
     color: rgb(120,120,120);
     border-radius: 10px;
+    overflow: hidden;
 }
 .lightJS {
     background-repeat: no-repeat;
