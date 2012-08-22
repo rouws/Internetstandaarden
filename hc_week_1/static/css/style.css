@@ -104,11 +104,13 @@ p {
  ***************************************/
 .slide {
     display: block;
-    width: 1000px;
-    height: 780px;
+    width: 1024px;
+    height: 768px;
     background-color: rgb(208,203,199);
     color: rgb(120,120,120);
     border-radius: 10px;
+    -moz-border-radius: 10px;
+    overflow: hidden;
 }
 .lightJS {
     background-repeat: no-repeat;
@@ -266,6 +268,7 @@ td {
     -o-transition-delay:      2.0s;
     transition-delay:         2.0s;
 }
+
 
 #ietsAnimerends strong {
     display: inline-block;
