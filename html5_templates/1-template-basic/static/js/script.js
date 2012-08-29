@@ -30,7 +30,7 @@ $(document).ready(function () {
 	);
 	
 	// Assign a reference to all the newly added buttons in the variable 'button'
-	var button = $("button", section);
+	var button = $("button", sections);
 	
 	// Add a click event for each button 
 	button.click(function () {
