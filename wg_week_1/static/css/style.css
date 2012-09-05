@@ -194,7 +194,11 @@ td {
     border:0;
     background-color: rgb(208,203,199);
 }
-.verticalLines td {
+.verticalLines tr {
+	display:table-row;
+}
+.verticalLines td,
+div.zoom {
     padding:10px;
     width:300px;
     vertical-align: middle;
@@ -210,7 +214,8 @@ td {
     background-image:      -o-linear-gradient(top, rgb(244,74,123), rgb(255,94,143));
     background-image:         linear-gradient(to bottom, rgb(244,74,123), rgb(255,94,143));
 }
-.verticalLines td:nth-child(odd) {
+.verticalLines td:nth-child(odd),
+div.zoom {
     background-color: rgb(0,206,254);
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(0,206,254)), to(rgb(20,226,255)));
     background-image: -webkit-linear-gradient(top, rgb(0,206,254), rgb(20,226,255));
@@ -275,7 +280,6 @@ td {
     -o-transition-delay:      1.0s;
     transition-delay:         1.0s;
 
-    display:table-cell;
 }
 
 
