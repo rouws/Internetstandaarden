@@ -106,7 +106,6 @@ p {
     background-color: rgb(208,203,199);
     color: rgb(120,120,120);
     border-radius: 10px;
-    overflow: hidden;
 }
 .lightJS {
     background-repeat: no-repeat;
@@ -256,6 +255,29 @@ td {
 /*************************************
   * UNIQUE STEPS
   ************************************/
+
+#weekoverzicht.present .zoom {
+    -webkit-transition: 0.5s;
+    -moz-transition:    0.5s;
+    -ms-transition:     0.5s;
+    -o-transition:      0.5s;
+    transition:         0.5s;
+
+    -webkit-transform: scale(2.0);
+    -moz-transform:    scale(2.0);
+    -ms-transform:     scale(2.0);
+    -o-transform:      scale(2.0);
+    transform:         scale(2.0);
+
+    -webkit-transition-delay: 1.0s;
+    -moz-transition-delay:    1.0s;
+    -ms-transition-delay:     1.0s;
+    -o-transition-delay:      1.0s;
+    transition-delay:         1.0s;
+
+    display:table-cell;
+}
+
 
 #overview { display: none }
 
