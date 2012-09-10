@@ -390,6 +390,13 @@ div.zoom {
 #nesten img {
     margin-top: 4em;
 }
+#boomstructuur {
+    text-align: center;
+}
+#boomstructuur img {
+    margin-top: 6em;
+
+}
 #studievragen ol {
     font-size: 45px;
 }
