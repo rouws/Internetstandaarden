@@ -38,7 +38,7 @@ $(document).ready(function(){
 					}												
 					this.p = p;																			
 					ctx.globalAlpha = opacity;						
-					ctx.drawImage($canvas3[0], sy+p, sy+p, 285-(p*2),285-(p*2), 0,0, w, h);								
+					ctx.drawImage($canvas3[0], sy+p, sy+p, 285-(p*2),285-(p*2), 0, 0, w, h);								
 				};
 			};
 			
@@ -65,15 +65,17 @@ $(document).ready(function(){
 				{
 					puffs[i].move(timeFac);	
 				}					
+				
 				ctx2.drawImage($canvas[0], 0, 0, 1024, 768);
-				setTimeout(loop, 25);
+
+				setTimeout(loop, 50);
 			};
 			// Turns out Chrome is much faster doing bitmap work if the bitmap is in an existing canvas rather
 			// than an IMG, VIDEO etc. So draw the big nebula image into canvas3
 			var	$canvas3 = $('#canvas3');
 			var	ctx3 = $canvas3[0].getContext('2d');
 			$(img).bind('load',null, function() {  ctx3.drawImage(img, 0,0, 570, 570);	loop(); });
-			img.src = '/hc_week_1/media/images/nebula.jpeg';
+			img.src = './media/images/nebula.jpeg';
 		
 	})(jQuery);	 
 });
