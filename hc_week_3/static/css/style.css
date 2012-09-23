@@ -296,15 +296,18 @@ td {
     border-radius: 10px;
 }
 
-#voordelen {
+#voordelen,
+#implementingcss {
     text-align: center;
 }
-#voordelen ul {
+#voordelen ul,
+#implementingcss ul {
     color: #ffffff;
     list-style: none;
 }
 
-#voordelen li {
+#voordelen li,
+#implementingcss li {
     margin-bottom: .5em;
 }
 
@@ -322,6 +325,42 @@ td {
     font-size: 40px;
     margin-top: 280px;
 }
+
+#validation {
+    text-align: center;
+}
+#validation a {
+    font-size: 100px;
+}
+
+#fps {
+    text-align: center;
+}
+#fps h1 {
+    text-align: center;
+    color: #ffffff;
+    margin:20px;
+}
+#fps ul {
+    list-style: none;
+    color: #ffffff;
+    margin: 0px;
+}
+#fps ul li {
+    display: inline;
+}
+
+#media {
+    text-align: center;
+    width: 525px;
+    height: 350px;
+    background: url(../../media/images/mediatype.jpg);
+}
+#media a {
+    font-size: 45px;
+    color: #000000;
+}
+
 
 
 #overview {
