@@ -424,6 +424,10 @@ td {
     margin: 10px;
 }
 
+#typesetting img {
+    border-radius: 10px;
+}
+
 #overview {
     display: none 
 }
