@@ -54,6 +54,7 @@ body {
 	background-color: rgb(180,180,180)
 }
 div#wrapper {
+	min-width:400px;
 	width:80%;
 	max-width:960px;
 	margin: 1em auto;
@@ -63,14 +64,14 @@ div#wrapper {
 	border-radius: 4px;
 }
 nav {
+	width:20%;
 	padding-top:1.5em;
-	width:25%;
 	float:left;
 }
 div#main-content {
+	width:73%;
 	float:left;
 	margin-left:1em;
-	width:73%;
 }
 footer {
 	clear:both;

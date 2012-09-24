@@ -13,7 +13,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
     min-height: 740px;
     background-color: rgb(55,49,49);
-    font-family:helvetica,sans-serif;
+    font-family: 'HelveticaNeue-Bold', helvetica, sans-serif;
     font-size: 22px;
 }
 strong {
@@ -265,6 +265,14 @@ td {
     margin-bottom: .5em;
 }
 
+#terugblik ul {
+    margin-top: 2em;
+    list-style: none;
+}
+#terugblik ul li {
+    margin-bottom: .5em;
+}
+
 #addsomestyle {
     background: transparent;
     border: 1px solid rgb(208,203,199);
@@ -348,6 +356,7 @@ td {
 }
 #fps ul li {
     display: inline;
+    font-size: 43px;
 }
 
 #media {
@@ -357,14 +366,70 @@ td {
     background: url(../../media/images/mediatype.jpg);
 }
 #media a {
-    font-size: 45px;
+    font-size: 40px;
     color: #000000;
 }
 
+#sixpack {
+    width: 1024px;
+    height: 768px;
+    background: url(../../media/images/wolverine.jpeg);
+}
 
+#sixpack ul {
+    list-style: none;
+    margin: 0px;
+    margin-top: 550px;
+    width: 500px;
+    float: left;
+}
+
+#sixpack ul#threesome {
+    text-align: right;
+}
+
+#sixpack li {
+    padding-left: .3em;
+    padding-right: .3em;
+}
+#hex {
+    width: 840px;
+}
+#hex ul {
+    list-style: none;
+    font-family: monospace;
+    width: 400px;
+    float: left;
+    text-align: center;
+    margin: 10px;
+    font-size: 40px;
+    color: #ffffff;
+}
+#hex ul li {
+    margin-bottom: 20px;
+}
+
+#rgba {
+    width:840px;
+    background: url(../../media/images/escher.png);
+}
+#rgba ul {
+    list-style: none;
+    font-family: monospace;
+    width: 400px;
+    float: left;
+    text-align: center;
+    font-size: 40px;
+    color: #ffffff;
+    margin: 10px;
+}
 
 #overview {
     display: none 
+}
+
+#studievragen ol {
+    font-size: 36px;
 }
 
 .impress-on-overview .step {

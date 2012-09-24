@@ -27,7 +27,7 @@
 <!-- INTRO -->
 <!-- http://youtu.be/3iVVM_DgWY4?hd=1 -->
 
-    <section id="first" class="step slide darkHTML" data-x="0" data-y="-0" data-z="10000">
+    <section id="first" class="step slide darkHTML" data-x="0" data-y="-1000" data-z="10000">
         <h1>Internetstandaarden</h1>
         <h2>Hoorcollege Blokweek 3</h2>
         <img src="static/images/transparentCSS.png" alt="" />
@@ -145,7 +145,13 @@
 
     <section id="terugblik" class="step slide" data-x="-512" data-y="400">
         <h1>Terugblik</h1>
-    
+        <ul>
+            <li>Semantiek, 3x woordwaarde</li>
+            <li>Anatomie van HTML elementen</li>
+            <li>Nesten in de DOM tree</li>
+            <li>Valideren van code (syntax)</li>
+            <li>Veel gebruikte HTML tags</li>
+        </ul>
     </section>
 
     <section id="addsomestyle" class="step slide" data-x="512" data-y="400">
@@ -219,32 +225,115 @@
 
 <!-- SELECTA -->
 
-    <section id="selecta" class="step" data-x="3000" data-y="0" data-rotate-z="90">
+    <section id="selecta" class="step" data-x="0" data-y="-2700">
         <h1>Selecta</h1>
+    </section>
+
+    <section id="sixpack" class="step" data-x="0" data-y="-1900">
+        <ul id="threesome">
+            <li>tag-type</li>
+            <li>class</li>
+            <li>meerdere</li>
+        </ul>
+        <ul>    
+            <li>id</li>
+            <li>pseudo-class</li>
+            <li>descendant</li>
+        </ul>
+    </section>
+
+    <section id="rendering" class="step" data-x="0" data-y="-1400">
+        <img src="media/images/domrendering.png" alt="">
     </section>
 
 <!-- MOOIE DINGEN MAKEN -->
 
-    <section id="mooi" class="step" data-x="0" data-y="-3000">
+    <section id="mooi" class="step" data-x="3000" data-y="0" data-rotate-z="90">
         <h1>Mooie dingen maken</h1>
     </section>
+
+    <section id="hex" class="step" data-x="2000" data-y="0">
+        <ul>
+            <li>hexadecimaal</li>
+            <li style="color: #ffffff; background: #000000;"># 00 00 00</li>
+            <li style="color: #000000; background: #ffffff;"># ff ff ff</li>
+            <li style="color: #ffffff; background: #ff0000;"># ff 00 00</li>
+            <li style="color: #ffffff; background: #00ff00;"># 00 ff 00</li>
+            <li style="color: #ffffff; background: #0000ff;"># 00 00 ff</li>
+            <li style="color: #ffffff; background: #c2c2c2;"># c2 c2 c2</li>
+        </ul>
+        <ul>
+            <li>rgb</li>
+            <li style="color: #ffffff; background: #000000;">rgb(0,0,0)</li>
+            <li style="color: #000000; background: #ffffff;">rgb(255,255,255)</li>
+            <li style="color: #ffffff; background: #ff0000;">rgb(255,0,0)</li>
+            <li style="color: #ffffff; background: #00ff00;">rgb(0,255,0)</li>
+            <li style="color: #ffffff; background: #0000ff;">rgb(0,0,255)</li>
+            <li style="color: #ffffff; background: #c2c2c2;">rgb(194,194,194)</li>
+        </ul>
+    </section>
+
+    <section id="rgba" class="step" data-x="2000" data-y="0" data-z="-420" data-rotate-y="90">
+        <ul>
+            <li style="color: #000000;">rgba</li>
+            <li style="color: rgba(255,255,255,.8); background: rgba(0,0,0,1);">rgba(0,0,0,1)</li>
+            <li style="color: rgba(255,255,255,.8); background: rgba(0,0,0,.8);">rgba(0,0,0,.8)</li>
+            <li style="color: rgba(255,255,255,.8); background: rgba(0,0,0,.6);">rgba(0,0,0,.6)</li>
+            <li style="color: rgba(255,255,255,.8); background: rgba(0,0,0,.4);">rgba(0,0,0,.4)</li>
+            <li style="color: rgba(255,255,255,.8); background: rgba(0,0,0,.2);">rgba(0,0,0,.2)</li>
+            <li style="color: rgba(0,0,0,.6); background: rgba(0,0,0,0);">rgba(0,0,0,0)</li>
+        </ul>
+        <ul>
+            <li style="color: #000000;">rgba</li>
+            <li style="color: rgba(255,255,255,.8); background: rgba(255,0,0,1);">rgba(255,0,0,1)</li>
+            <li style="color: rgba(255,255,255,.8); background: rgba(255,0,0,.8);">rgba(255,0,0,.8)</li>
+            <li style="color: rgba(255,255,255,.8); background: rgba(255,0,0,.6);">rgba(255,0,0,.6)</li>
+            <li style="color: rgba(255,255,255,.8); background: rgba(255,0,0,.4);">rgba(255,0,0,.4)</li>
+            <li style="color: rgba(255,255,255,.8); background: rgba(255,0,0,.2);">rgba(255,0,0,.2)</li>
+            <li style="color: rgba(0,0,0,.6); background: rgba(255,0,0,0);">rgba(255,0,0,0)</li>
+        </ul>
+        <ul>
+            <li style="color: rgba(255,255,255,.8); background: rgba(0,255,0,1);">rgba(0,255,0,1)</li>
+            <li style="color: rgba(255,255,255,.8); background: rgba(0,255,0,.8);">rgba(0,255,0,.8)</li>
+            <li style="color: rgba(255,255,255,.8); background: rgba(0,255,0,.6);">rgba(0,255,0,.6)</li>
+            <li style="color: rgba(255,255,255,.8); background: rgba(0,255,0,.4);">rgba(0,255,0,.4)</li>
+            <li style="color: rgba(255,255,255,.8); background: rgba(0,255,0,.2);">rgba(0,255,0,.2)</li>
+            <li style="color: rgba(0,0,0,.6); background: rgba(0,0,0,0);">rgba(0,255,0,0)</li>
+        </ul>
+        <ul>
+            <li style="color: rgba(255,255,255,.8); background: rgba(0,0,255,1);">rgba(0,0,255,1)</li>
+            <li style="color: rgba(255,255,255,.8); background: rgba(0,0,255,.8);">rgba(0,0,255,.8)</li>
+            <li style="color: rgba(255,255,255,.8); background: rgba(0,0,255,.6);">rgba(0,0,255,.6)</li>
+            <li style="color: rgba(255,255,255,.8); background: rgba(0,0,255,.4);">rgba(0,0,255,.4)</li>
+            <li style="color: rgba(255,255,255,.8); background: rgba(0,0,255,.2);">rgba(0,0,255,.2)</li>
+            <li style="color: rgba(0,0,0,.6); background: rgba(0,0,255,0);">rgba(0,0,255,0)</li>
+        </ul>
+    </section>
+
+
 
 <!-- SAMENVATTING EN HUISWERK -->
 
     <section id="overview" class="step" data-x="0" data-y="0" data-z="0" data-scale="8">
     </section>
 
-    <section class="step slide summaryHTML" data-x="0" data-y="800" data-z="10000">
-        <h1>Samenvatting</h1>
-        <ul>
-            <li>kfdslj</li>
-            <li>jsfdkl</li>
-        </ul>
+    <section id="studievragen" class="step slide summaryHTML" data-x="0" data-y="-200" data-z="10000">
+        <h1>Studievragen</h1>
+        <ol>
+            <li>Wat wordt bedoeld met scheiding van vormgeving, inhoud en gedrag?</li>
+            <li>Wat zijn voordelen van het scheiden van vormgeving, inhoud en gedrag?</li>
+            <li>Wat is het verschil tussen inline, intern/embedded en externe CSS-code?</li>
+            <li>Hoe kan je je CSS code valideren?</li>
+            <li>Hoe ziet de anatomie van een CSS-regel eruit?</li>
+            <li>Welke verschillende soorten selectoren zijn er?</li>
+            <li>Wat wordt bedoeld met 'Cascading' in CSS?</li>
+            <li>Wat wordt bedoeld met 'overerven' binnen CSS?</li>
+        </ol>
     </section>
 
-    <section class="step slide darkNeutral" data-x="0" data-y="1600" data-z="10000">
+    <section class="step slide darkNeutral" data-x="0" data-y="600" data-z="10000">
         <h1>Huiswerk</h1>
-        <p class="fullscreen">Lezen hoofdstuk 8 t/m 10</p>
+        <p class="fullscreen">Lezen hoofdstuk 10, 11 en 12</p>
     </section>
 
 </section>
