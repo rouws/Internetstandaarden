@@ -12,9 +12,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 body {
     min-height: 740px;
-    background-color: rgb(55,49,49);
+    background-color: black;
     font-family:helvetica,sans-serif;
     font-size: 22px;
+    background: url(../../media/images/yellowSpace.jpeg) bottom left no-repeat black;
+    background-size: 100%;
 }
 strong {
     text-transform: uppercase;
@@ -225,7 +227,7 @@ td {
 
 .step {
     position: relative;
-    width: 1000px;
+    width: 1024px;
     margin: 20px auto;
 }
 
@@ -248,62 +250,103 @@ td {
   * UNIQUE STEPS
   ************************************/
 
-#weekoverzicht.present .zoom {
-    -webkit-transition: 0.5s;
-    -moz-transition:    0.5s;
-    -ms-transition:     0.5s;
-    -o-transition:      0.5s;
-    transition:         0.5s;
+#first {
+    background: url(../../media/images/railway.png);
+    color: #000000;
 
-    -webkit-transform: scale(1.5);
-    -moz-transform:    scale(1.5);
-    -ms-transform:     scale(1.5);
-    -o-transform:      scale(1.5);
-    transform:         scale(1.5);
-
-    -webkit-transition-delay: 2.0s;
-    -moz-transition-delay:    2.0s;
-    -ms-transition-delay:     2.0s;
-    -o-transition-delay:      2.0s;
-    transition-delay:         2.0s;
 }
-
-#ietsAnimerends strong {
+#first blockquote {
+    background: rgba(243,234,213, .8);
+    width: 800px;
+    font-size: 40px;
+    padding: 15px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 380px;
+    text-align: justify;
+}
+#first cite {
     display: inline-block;
-    -webkit-transition: 0.5s;
-    -moz-transition:    0.5s;
-    -ms-transition:     0.5s;
-    -o-transition:      0.5s;
-    transition:         0.5s;
+    clear: both;
+    font-size: 20px;
+    margin-left: 10px;
 }
-#ietsAnimerends.present #zoom{
-    -webkit-transform: scale(1.1);
-    -moz-transform:    scale(1.1);
-    -ms-transform:     scale(1.1);
-    -o-transform:      scale(1.1);
-    transform:         scale(1.1);
 
-    -webkit-transition-delay: 0.5s;
-    -moz-transition-delay:    0.5s;
-    -ms-transition-delay:     0.5s;
-    -o-transition-delay:      0.5s;
-    transition-delay:         0.5s;
-}
-#ietsAnimerends.present #up{
-     -webkit-transform: translateY(-10px);
-    -moz-transform:    translateY(-10px);
-    -ms-transform:     translateY(-10px);
-    -o-transform:      translateY(-10px);
-    transform:         translateY(-10px);
-
-    -webkit-transition-delay: 1s;
-    -moz-transition-delay:    1s;
-    -ms-transition-delay:     1s;
-    -o-transition-delay:      1s;
-    transition-delay:         1s;
+#weekoverzicht table {
+    font-family: 'Nixie One', serif;
 }
 
 #overview { display: none }
+
+
+#samenvatting>ul {
+    list-style: none;
+    padding: 0px;
+    width: 920px;
+    margin: auto;
+    overflow: auto;
+}
+#samenvatting>ul>li {
+    color: rgb(0,160,254);
+    padding: 0px;
+    display: block;
+    float: left;
+    width: 450px;
+    height: 300px;
+    font-size: 1.5em;
+    font-weight: bolder;
+     background: rgba(255,255,255,0.4);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#samenvatting>ul>li>span {
+    display: block;
+    margin-top: -14px;
+    margin-left: -6px;
+}
+#samenvatting>ul>li {
+    margin-right: 20px;
+}
+#samenvatting>ul>li+li {
+    margin-right: 0px;
+}
+#samenvatting>ul>li:nth-child(3) {
+    margin-right: 20px;
+}
+
+#samenvatting>ul>li+li+li {
+    clear: both;
+    margin: 0px;
+}
+#samenvatting>ul>li+li+li+li {
+    clear: none;
+}
+#samenvatting>ul>li>ul {
+    list-style: none;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    padding: 0px;
+    margin: 0px;
+    font-size: .52em;
+    margin-left: 0px;
+    margin-top: 20px;
+}
+#samenvatting>ul>li>ul>li {
+    margin-top: 20px;
+}
+
+#huiswerk>ul {
+    list-style: none;
+    margin-left: 150px;
+    margin-top: =0px;
+}
+
+#huiswerk li>ul {
+    list-style: disc;
+    margin-left: 1em;
+    font-size: .8em; 
+}
 
 /*
     We also make other steps visible and give them a pointer cursor using the
@@ -312,6 +355,16 @@ td {
 .impress-on-overview .step {
     opacity: 1;
     cursor: pointer;
+}
+
+.floater {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    -webkit-box-shadow: 0px 0px 50px 0px #fff;
+        box-shadow: 0px 0px 50px 0px #fff;
+
+    background: rgb(243,234,213);
 }
 
 /*********************************
