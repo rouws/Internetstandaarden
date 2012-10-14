@@ -231,7 +231,8 @@
     </section> 
 
     <section id="inladen" class="step slide" data-x="0" data-y="2400" data-z="0">
-        <h1>Lokaal</h1>
+        <h1>1. Koppel de jQuery library</h1>
+        <h2>Lokaal</h2>
         <ul>
             <li>+ Lokaal testen zonder netwerk</li>
             <li>+ Absolute controle</li>
@@ -240,39 +241,91 @@
         </ul>
         <code>&lt;script src="/static/js/jquery-1.8.2.js" type="text/javascript"&gt;&lt;/script&gt;</code>
 
-        <h1>Remote</h1>
+        <h2>Remote</h2>
         <ul>
             <li>+ Minder kans op security flaws</li>
             <li>- Mogelijk iets langere laadtijd</li>
             <li>- Zonder netwerk geen jQuery</li>
-            <li></li>
-            <li></li>
         </ul>
         <code>&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"&gt;&lt;/script&gt;</code>
 
     </section> 
 
     <section id="aanroepen" class="step slide" data-x="0" data-y="2400" data-z="-2000">
-        jQuery aanroepen (5 manieren om hetzelfde te doen?)
+        <h1>3. Roep jQuery aan</h1>
+        <pre><code>
+$(function(){
+    // jouw code
+});
+
+
+jQuery(function($){
+    // jouw code
+});
+
+
+$(document).ready(function(){
+    // jouw code
+});
+
+
+jQuery(document).ready(function(){
+   // jouw code 
+});
+
+
+jQuery(document).ready(function($){
+    // jouw code
+});
+        </code></pre>
+        <p id="ilike"><-- I like this</p>
     </section> 
 
     <section id="magic" class="step" data-x="0" data-y="2400" data-z="-4000">
         <img src="media/images/magic.png" alt="">
     </section> 
 
-    <section id="source" class="step slide" data-x="0" data-y="1400" data-z="0">
-        yoda!
+    <section id="source" class="step" data-x="0" data-y="1400" data-z="0">
+        <a href="voorbeelden/index.html" target="_blank">Use the force, read the source</a>
     </section> 
 
-    <section id="info" class="step slide" data-x="0" data-y="1400" data-z="-2000">
-        Meer info?
-    </section> 
+    <section id="selectie" class="step slide" data-x="0" data-y="1400" data-z="-2000">
+        <h1>Selecting</h1>
+        <ul>
+            <li>Direct: via DOM selector</li>
+            <li>Traversing: find / each / first / last / parent / next / prev</li>
+        </ul>
+        
+        <h1>Events</h1>
+        <ul>
+            <li>Click</li>
+            <li>Hover</li>
+        </ul>
+
+        <h1>Effects</h1>
+        <ul>
+            <li>hide / show / toggle</li>
+            <li>fadeIn / fadeOut / fadeToggle</li>
+            <li>slideIn / slideOut / slideToggle</li>
+        </ul>
+        
+        <h1>Manipulation</h1>
+        <ul>
+            <li>css</li>
+            <li>addClass/ removeClass/ toggleClass</li>
+        </ul>
+    </section>
+
+    <section id="info" class="step slide" data-x="0" data-y="1400" data-z="-4000">
+        <iframe src="http://www.jquery.com" frameborder="0"></iframe>
+    </section>
 
 <!-- SAMENVATTING EN HUISWERK -->
     <section id="overview" class="step" data-x="0" data-y="0" data-z="0" data-scale="6">        
     </section>
 
     <section id="studievragen" class="step slide summary" data-x="2400" data-y="1400" data-z="2000">
+        <h1>Studievragen</h1>
         <ul>
             <li>Wat is de rendering engine van een browser?</li>
             <li>Wat is DOM-manipulatie?</li>
