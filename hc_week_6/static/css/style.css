@@ -13,7 +13,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
     min-height: 740px;
     background-color: black;
-    font-family:helvetica,sans-serif;
+    font-family: 'HelveticaNeue-Bold', helvetica, sans-serif;
     font-size: 22px;
     background: url(../../media/images/yellowSpace.jpeg) bottom left no-repeat black;
     background-size: 100%;
@@ -64,18 +64,6 @@ p {
     position:absolute;
     top:350px;
     font-size:48px;
-}    
-.html {
-    color:rgb(0,160,254);
-    font-family:courier, monospace;
-}
-.css {
-    color:rgb(244,74,123);
-    font-family:courier, monospace;
-}
-.lessImportant {
-    color:rgb(120,120,120);
-    font-style:italic;
 }
 /*******************************
  * FALLBACK MESSAGE
@@ -104,90 +92,50 @@ p {
 /***************************************
  * SLIDE
  ***************************************/
+.step {
+    color: #F8F1E3;
+}
 .slide {
     display: block;
     width: 1024px;
     height: 768px;
-    background-color: rgb(208,203,199);
-    color: rgb(120,120,120);
+    background: #F8F1E3;
+    color: #47434C;
     border-radius: 10px;
     overflow: hidden;
 }
-.lightJS {
+.summary,
+.dark {
+    color: #F8F1E3;
+    background-color: #47434C;
     background-repeat: no-repeat;
-    background-image: url(../images/lightJS.jpg);
-}
-.lightHTML {
-    background-repeat: no-repeat;
-    background-image: url(../images/lightHTML.jpg);
-}
-.lightCSS {
-    background-repeat: no-repeat;
-    background-image: url(../images/lightCSS.jpg);
-}
-.darkJS {
-    color: white;
-    background-color: rgb(85,79,79);
-    background-repeat: no-repeat;
-    background-image: url(../images/darkJS.jpg);
-}
-.darkNeutral {
-    color: white;
-    background-color: rgb(85,79,79);
-    background-repeat: no-repeat;
-    background-image: url(../images/darkNeutral.jpg);
-}
-.darkHTML {
-    color: white;
-    background-color: rgb(85,79,79);
-    background-repeat: no-repeat;
-    background-image: url(../images/darkHTML.jpg);
-}
-.darkCSS {
-    color: white;
-    background-color: rgb(85,79,79);
-    background-repeat: no-repeat;
-    background-image: url(../images/darkCSS.jpg);
-}
-.summaryHTML {
-    background-color: rgb(0,160,254);
-    color:white;
-}
-.summaryCSS {
-    background-color: rgb(244,74,123);
-    color:white;
 }
 
 /*********************
  *  TABLES
  *********************/
 table {
-    margin:0px 20px 20px 40px;
+    margin: auto;
 }
 th {
     padding:10px;
-    vertical-align: top;
-    text-align: left;
+    border:0;
+
+    vertical-align: middle;
+    text-align: center;
+    
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-weight: normal;
-    color:rgb(80,80,80);
     font-size: 14px;
-    border-bottom:1px solid rgb(120,120,120);
 }
 td {
-    color:rgb(80,80,80);
-    font-size:11px;
+    font-size:10px;
     padding:10px;
     border-bottom:1px dotted rgb(120,120,120);
     vertical-align: top;
 }
-.verticalLines th {
-    text-align: center;
-    vertical-align: middle;
-    border:0;
-    background-color: rgb(208,203,199);
-}
+
 .verticalLines td {
     padding:10px;
     width:300px;
@@ -224,13 +172,11 @@ td {
 /******************************
  * STEPS
  ******************************/
-
 .step {
     position: relative;
     width: 1024px;
     margin: 20px auto;
 }
-
 .impress-enabled .step {
     opacity: 0.3;
 
@@ -259,12 +205,15 @@ td {
     background: rgba(243,234,213, .8);
     width: 800px;
     font-size: 40px;
+    line-height: .9em;
     padding: 15px;
     border-radius: 10px;
     margin: auto;
     margin-top: 380px;
     text-align: justify;
 }
+
+#dom cite,
 #first cite {
     display: inline-block;
     clear: both;
@@ -272,12 +221,123 @@ td {
     margin-left: 10px;
 }
 
-#weekoverzicht table {
-    font-family: 'Nixie One', serif;
+#dom blockquote {
+    color: #F8F1E3;
+    background: rgba(74,72,79,.8);
+    width: 850px;
+    padding: 35px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: justify;
+    font-size: 40px;
+}
+
+#domschema img {
+    margin: auto;
+}
+
+#wolverine {
+    color: #47434C;
+    width: 1024px;
+    height: 768px;
+    background: url(../../media/images/wolverineSepia.jpg);
+    border-radius: 10px;
+}
+
+#wolverine ul {
+    list-style: none;
+    margin: 0px;
+    margin-top: 550px;
+    width: 500px;
+    float: left;
+}
+
+#wolverine ul#threesome {
+    text-align: right;
+}
+
+#wolverine li {
+    padding-left: .3em;
+    padding-right: .3em;
+}
+
+#nutshell {
+    text-align: center;
+    width: 900px;
+    height: 650px;
+}
+#nutshell img {
+    margin-top: 1em;
+}
+
+#rendering1 h1 {
+    font-size: 90px;
+    margin: auto;
+    text-align: center;
+}
+
+#rendering2, #rendering3 {
+    height: 200px;
+    text-align: center;
+}
+
+#javascript h1 {
+    margin: 0px; padding: 0px;
+    margin: 10px;
+    font-size: 50px;
+}
+#javascript div {
+    width: 512px;
+    float:left;
+    text-align: right;
+}
+#javascript div+div {
+    float: right;
+    text-align: left;
+}
+#javascript div+div h1 {
+    text-align: left;
+}
+#javascript ul {
+    list-style: none;
+    margin: 10px;
+    font-size: 30px;
+}
+
+#jslezen {
+    background: url(../../media/images/boek.png) no-repeat white;
+    background-position: center;
+}
+
+#library img {
+    border-radius: 10px;
+}
+
+#magic img {
+    border-radius: 10px;
+}
+
+#jquery {
+    text-align: center;
+}
+#jquery img {
+    border-radius: 10px;   
+}
+
+#website iframe {
+    margin: 0px;
+    width: 1024px;
+    height: 768px;
+    border-radius: 10px;
+}
+
+#implementatie ol {
+    margin-top: 3em;
+    margin-left: 3em;
 }
 
 #overview { display: none }
-
 
 #samenvatting>ul {
     list-style: none;
@@ -287,7 +347,7 @@ td {
     overflow: auto;
 }
 #samenvatting>ul>li {
-    color: rgb(0,160,254);
+    color: #47434C;
     padding: 0px;
     display: block;
     float: left;
@@ -301,8 +361,8 @@ td {
 }
 #samenvatting>ul>li>span {
     display: block;
-    margin-top: -14px;
-    margin-left: -6px;
+    margin-top: -22px;
+    margin-left: -11px;
 }
 #samenvatting>ul>li {
     margin-right: 20px;
@@ -360,13 +420,9 @@ td {
 .floater {
     width: 10px;
     height: 10px;
-    border-radius: 50px;
-    -webkit-box-shadow: 0px 0px 50px 0px #fff;
-        box-shadow: 0px 0px 50px 0px #fff;
-
-    background: rgb(243,234,213);
+    border-radius: 5px;
+    background: #F8F1E3;
 }
-
 /*********************************
  * HINT
  *********************************/
